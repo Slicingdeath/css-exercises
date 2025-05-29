@@ -27,3 +27,34 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/*flex*/
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 16px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  gap: 16px;
+}
+
+.card1,
+.card2 {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  display: block;
+}
