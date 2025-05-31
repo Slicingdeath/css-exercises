@@ -30,31 +30,58 @@ body {
 
 /*flex*/
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 ul {
-  text-decoration: none;
   list-style-type: none;
   margin: 0px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-a:link {
+a {
   text-decoration: none;
   color: white;
+  font-size: 24px;
+
 }
+
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 16px;
-  gap: 16px;
-}
-
-.card1,
-.card2 {
-  display: flex;
-  gap: 16px;
+  padding: 32px;
 }
 
 .card {
-  display: block;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+
+.all {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  flex-shrink: 0;
 }
